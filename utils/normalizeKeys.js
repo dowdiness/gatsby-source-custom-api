@@ -1,5 +1,5 @@
 function isRestricted (key) {
-  const restrictedKeys = ['id', 'children', 'parent', 'fields', 'internal']
+  const restrictedKeys = ['id', 'url', 'children', 'parent', 'fields', 'internal']
   if (restrictedKeys.includes(key)) {
     console.log(`The key "${key}" is restricted in GraphQl!`)
     return `${key}__normalized`
